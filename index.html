@@ -1,0 +1,2449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>APEX Bank | Careers, Wealth & Corporate Banking</title>
+
+<style>
+
+/* =========================================================
+   APEX BANK - GLOBAL STYLES
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --navy: #071a33;
+    --navy2: #0c294d;
+    --blue: #123f70;
+    --lightblue: #eaf3fb;
+    --gold: #c9a227;
+    --white: #ffffff;
+    --light: #f6f8fb;
+    --dark: #172033;
+    --gray: #64748b;
+    --border: #dce4ed;
+    --shadow: 0 15px 40px rgba(7, 26, 51, 0.12);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+    background: var(--white);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title span {
+    color: var(--gold);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    color: var(--navy);
+    margin: 12px 0;
+}
+
+.section-title p {
+    color: var(--gray);
+    max-width: 700px;
+    margin: auto;
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(7, 26, 51, 0.96);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.nav-container {
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: #d9c27c;
+    margin-top: -5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d9c27c;
+}
+
+.career-btn {
+    background: var(--gold);
+    color: var(--navy) !important;
+    padding: 11px 18px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.menu-btn {
+    display: none;
+    color: white;
+    font-size: 27px;
+    background: none;
+    border: none;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 100vh;
+    background:
+        linear-gradient(90deg, rgba(5,20,40,.96), rgba(5,20,40,.72), rgba(5,20,40,.45)),
+        url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=80");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-top: 78px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-tag {
+    color: #d9c27c;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.05;
+    margin: 18px 0;
+}
+
+.hero h1 span {
+    color: #d9c27c;
+}
+
+.hero p {
+    font-size: 19px;
+    max-width: 650px;
+    color: #e5edf5;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 14px 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: .3s;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border-color: white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--navy);
+}
+
+/* =========================================================
+   QUICK STATS
+========================================================= */
+
+.quick-stats {
+    background: var(--navy);
+    color: white;
+}
+
+.quick-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.quick-stat {
+    padding: 35px 20px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,.15);
+}
+
+.quick-stat:last-child {
+    border: none;
+}
+
+.quick-stat h3 {
+    font-size: 30px;
+    color: #d9c27c;
+}
+
+.quick-stat p {
+    color: #d5deea;
+}
+
+/* =========================================================
+   INTERACTIVE APEX HUB
+========================================================= */
+
+.apex-hub {
+    background: var(--light);
+}
+
+.hub {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.hub-logo {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 8px solid #d9c27c;
+    box-shadow: 0 0 0 15px rgba(201,162,39,.1);
+}
+
+.hub-logo h2 {
+    font-size: 42px;
+    letter-spacing: 4px;
+}
+
+.hub-logo small {
+    display: block;
+    font-size: 10px;
+    color: #d9c27c;
+    letter-spacing: 3px;
+}
+
+.hub-cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 18px;
+}
+
+.hub-card {
+    background: white;
+    padding: 28px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.hub-card:hover {
+    transform: translateY(-7px);
+}
+
+.hub-card .icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.hub-card h3 {
+    color: var(--navy);
+    margin-bottom: 7px;
+}
+
+.hub-card p {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about {
+    background: white;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.about-image {
+    min-height: 430px;
+    border-radius: 10px;
+    background:
+        linear-gradient(rgba(7,26,51,.2),rgba(7,26,51,.2)),
+        url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.about-text h2 {
+    font-size: 42px;
+    color: var(--navy);
+    margin: 12px 0 20px;
+}
+
+.about-text p {
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.pillars {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.pillar {
+    background: var(--lightblue);
+    padding: 20px 12px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.pillar h4 {
+    color: var(--navy);
+}
+
+/* =========================================================
+   PERFORMANCE
+========================================================= */
+
+.performance {
+    background: var(--light);
+}
+
+.performance-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.performance-card {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.performance-card h3 {
+    color: var(--navy);
+    font-size: 36px;
+}
+
+.performance-card p {
+    color: var(--gray);
+}
+
+.chart-box {
+    margin-top: 50px;
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.chart {
+    display: flex;
+    align-items: end;
+    height: 250px;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.bar {
+    flex: 1;
+    background: var(--navy);
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    transition: .4s;
+}
+
+.bar:hover {
+    background: var(--gold);
+}
+
+.bar span {
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.chart-labels {
+    display: flex;
+    gap: 20px;
+    padding: 12px 20px;
+}
+
+.chart-labels div {
+    flex: 1;
+    text-align: center;
+    color: var(--gray);
+}
+
+/* =========================================================
+   CAREERS
+========================================================= */
+
+.careers {
+    background: var(--navy);
+    color: white;
+}
+
+.careers .section-title h2 {
+    color: white;
+}
+
+.careers .section-title p {
+    color: #cbd7e5;
+}
+
+.search-box {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.search-box input,
+.search-box select {
+    padding: 15px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    outline: none;
+}
+
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 18px;
+}
+
+.job-card {
+    background: white;
+    color: var(--dark);
+    padding: 25px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.job-card h3 {
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.job-meta {
+    color: var(--gray);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.job-card button {
+    border: none;
+    background: var(--navy);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 4px;
+}
+
+/* =========================================================
+   CAREER AREAS
+========================================================= */
+
+.career-areas {
+    background: white;
+}
+
+.area-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.area {
+    padding: 30px;
+    background: var(--light);
+    border-left: 4px solid var(--gold);
+    transition: .3s;
+}
+
+.area:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.area h3 {
+    color: var(--navy);
+}
+
+/* =========================================================
+   EMPLOYEE JOURNEY
+========================================================= */
+
+.journey {
+    background: var(--lightblue);
+}
+
+.journey-line {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
+}
+
+.journey-step {
+    text-align: center;
+    position: relative;
+}
+
+.journey-number {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    border: 4px solid #d9c27c;
+}
+
+.journey-step h3 {
+    margin-top: 15px;
+    color: var(--navy);
+}
+
+.journey-step p {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+/* =========================================================
+   WHY APEX
+========================================================= */
+
+.why {
+    background: white;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
+}
+
+.why-card {
+    padding: 25px 15px;
+    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.why-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-5px);
+}
+
+.why-card h3 {
+    color: var(--navy);
+    margin: 10px 0;
+}
+
+/* =========================================================
+   EMPLOYEE STORIES
+========================================================= */
+
+.stories {
+    background: var(--light);
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.story {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.story-image {
+    height: 230px;
+    background-size: cover;
+    background-position: center;
+}
+
+.story:nth-child(1) .story-image {
+    background-image: url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=700&q=80");
+}
+
+.story:nth-child(2) .story-image {
+    background-image: url("https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=700&q=80");
+}
+
+.story:nth-child(3) .story-image {
+    background-image: url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=700&q=80");
+}
+
+.story-content {
+    padding: 25px;
+}
+
+.story-content h3 {
+    color: var(--navy);
+}
+
+/* =========================================================
+   CUSTOMER REVIEWS
+========================================================= */
+
+.reviews {
+    background: white;
+}
+
+.review-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.review-tabs button {
+    border: 1px solid var(--navy);
+    background: white;
+    color: var(--navy);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.review-tabs button.active,
+.review-tabs button:hover {
+    background: var(--navy);
+    color: white;
+}
+
+.review-box {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    background: var(--light);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.quote {
+    font-size: 23px;
+    font-style: italic;
+    color: var(--navy);
+    margin-bottom: 20px;
+}
+
+.review-name {
+    font-weight: bold;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta {
+    background:
+        linear-gradient(rgba(7,26,51,.95),rgba(7,26,51,.95)),
+        url("https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1500&q=80");
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    max-width: 650px;
+    margin: auto auto 30px;
+    color: #d7e1ed;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background: #041225;
+    color: white;
+    padding: 55px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer p,
+footer a {
+    color: #aebdce;
+    font-size: 14px;
+}
+
+footer a {
+    display: block;
+    margin: 8px 0;
+}
+
+footer a:hover {
+    color: #d9c27c;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    padding-top: 20px;
+    text-align: center;
+    color: #8393a7;
+    font-size: 12px;
+}
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    inset: 0;
+    background: rgba(0,0,0,.7);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background: white;
+    max-width: 600px;
+    width: 100%;
+    padding: 35px;
+    border-radius: 10px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--gray);
+}
+
+.modal-content h2 {
+    color: var(--navy);
+    margin-bottom: 10px;
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.modal-content textarea {
+    min-height: 100px;
+}
+
+.form-btn {
+    width: 100%;
+    border: none;
+    padding: 14px;
+    background: var(--navy);
+    color: white;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.top-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 20px;
+    display: none;
+    z-index: 900;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width: 900px) {
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        width: 100%;
+        background: var(--navy);
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .quick-grid,
+    .performance-grid,
+    .area-grid,
+    .story-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .hub,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .journey-line {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .search-box {
+        grid-template-columns: 1fr;
+    }
+
+    .jobs {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .quick-grid,
+    .performance-grid,
+    .area-grid,
+    .story-grid,
+    .why-grid,
+    .hub-cards,
+    .pillars {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .review-box {
+        padding: 30px 20px;
+    }
+
+    .cta h2 {
+        font-size: 35px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ======================================================
+     NAVIGATION
+====================================================== -->
+
+<nav class="navbar">
+
+<div class="container nav-container">
+
+<a href="#home" class="logo">
+APEX
+<span>BANK</span>
+</a>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="#about">About Us</a></li>
+
+<li><a href="#performance">Performance</a></li>
+
+<li><a href="#reviews">Clients</a></li>
+
+<li><a href="#careers" class="career-btn">Careers</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="hero-tag">
+APEX BANK
+</div>
+
+<h1>
+Build Your Career
+<br>
+at the <span>APEX.</span>
+</h1>
+
+<p>
+Where ambitious people come together to shape the future of
+wealth management, asset management and corporate banking.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#careers" class="btn btn-primary">
+Explore Careers
+</a>
+
+<a href="#about" class="btn btn-outline">
+Discover APEX
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     QUICK STATS
+====================================================== -->
+
+<section class="quick-stats">
+
+<div class="container quick-grid">
+
+<div class="quick-stat">
+<h3>42K+</h3>
+<p>Clients</p>
+</div>
+
+<div class="quick-stat">
+<h3>₹85K Cr</h3>
+<p>Illustrative AUM</p>
+</div>
+
+<div class="quick-stat">
+<h3>18</h3>
+<p>Markets</p>
+</div>
+
+<div class="quick-stat">
+<h3>2,500+</h3>
+<p>Employees</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     INTERACTIVE APEX HUB
+====================================================== -->
+
+<section class="section apex-hub">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>The APEX Experience</span>
+
+<h2>One Bank. Four Perspectives.</h2>
+
+<p>
+Explore APEX through the people who build it,
+the performance we deliver and the clients we serve.
+</p>
+
+</div>
+
+<div class="hub">
+
+<div>
+
+<div class="hub-logo">
+
+<div>
+<h2>APEX</h2>
+<small>BANK</small>
+</div>
+
+</div>
+
+</div>
+
+<div class="hub-cards">
+
+<div class="hub-card" onclick="goTo('careers')">
+
+<div class="icon">👤</div>
+
+<h3>PEOPLE</h3>
+
+<p>
+Discover careers, employee journeys,
+learning and opportunities.
+</p>
+
+</div>
+
+
+<div class="hub-card" onclick="goTo('performance')">
+
+<div class="icon">📊</div>
+
+<h3>PERFORMANCE</h3>
+
+<p>
+Explore APEX's illustrative growth,
+performance and milestones.
+</p>
+
+</div>
+
+
+<div class="hub-card" onclick="goTo('reviews')">
+
+<div class="icon">❤️</div>
+
+<h3>CLIENTS</h3>
+
+<p>
+Discover how our clients experience
+APEX.
+</p>
+
+</div>
+
+
+<div class="hub-card" onclick="goTo('about')">
+
+<div class="icon">🏛️</div>
+
+<h3>ABOUT APEX</h3>
+
+<p>
+Understand our vision, values,
+purpose and business.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     ABOUT US
+====================================================== -->
+
+<section class="section about" id="about">
+
+<div class="container">
+
+<div class="about-grid">
+
+<div class="about-image"></div>
+
+<div class="about-text">
+
+<span class="hero-tag" style="color:#c9a227;">
+ABOUT APEX
+</span>
+
+<h2>
+Built Around Trust.
+Driven by Ambition.
+</h2>
+
+<p>
+APEX Bank is a fictional premium financial institution
+created for this academic website project.
+</p>
+
+<p>
+The bank is designed to serve high-net-worth individuals,
+entrepreneurs and corporate clients through wealth management,
+asset management and corporate financial solutions.
+</p>
+
+<div class="pillars">
+
+<div class="pillar">
+<h4>TRUST</h4>
+<p>Long-term relationships</p>
+</div>
+
+<div class="pillar">
+<h4>EXPERTISE</h4>
+<p>Financial knowledge</p>
+</div>
+
+<div class="pillar">
+<h4>INNOVATION</h4>
+<p>Modern solutions</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     PERFORMANCE
+====================================================== -->
+
+<section class="section performance" id="performance">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>APEX Performance</span>
+
+<h2>Our Journey in Numbers</h2>
+
+<p>
+Illustrative performance indicators created for academic
+website demonstration.
+</p>
+
+</div>
+
+<div class="performance-grid">
+
+<div class="performance-card">
+
+<h3 class="counter" data-target="85000">0</h3>
+
+<p>₹ Crore AUM</p>
+
+</div>
+
+<div class="performance-card">
+
+<h3 class="counter" data-target="42">0</h3>
+
+<p>Thousand+ Clients</p>
+
+</div>
+
+<div class="performance-card">
+
+<h3 class="counter" data-target="18">0</h3>
+
+<p>Markets</p>
+
+</div>
+
+<div class="performance-card">
+
+<h3 class="counter" data-target="94">0</h3>
+
+<p>% Client Retention</p>
+
+</div>
+
+</div>
+
+
+<div class="chart-box">
+
+<h3 style="color:#071a33;">
+Illustrative AUM Growth
+</h3>
+
+<div class="chart">
+
+<div class="bar" style="height:35%;">
+<span>35K</span>
+</div>
+
+<div class="bar" style="height:48%;">
+<span>48K</span>
+</div>
+
+<div class="bar" style="height:62%;">
+<span>62K</span>
+</div>
+
+<div class="bar" style="height:75%;">
+<span>75K</span>
+</div>
+
+<div class="bar" style="height:90%;">
+<span>85K</span>
+</div>
+
+</div>
+
+<div class="chart-labels">
+
+<div>2022</div>
+<div>2023</div>
+<div>2024</div>
+<div>2025</div>
+<div>2026</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     CAREERS
+====================================================== -->
+
+<section class="section careers" id="careers">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>Careers at APEX</span>
+
+<h2>Find Your Place at APEX</h2>
+
+<p>
+Your next opportunity could be the beginning of
+something extraordinary.
+</p>
+
+</div>
+
+
+<div class="search-box">
+
+<input
+type="text"
+id="jobSearch"
+placeholder="Search job title..."
+onkeyup="filterJobs()">
+
+<select id="departmentFilter" onchange="filterJobs()">
+
+<option value="">All Departments</option>
+
+<option value="Wealth">Wealth Management</option>
+
+<option value="Asset">Asset Management</option>
+
+<option value="Corporate">Corporate Banking</option>
+
+<option value="Technology">Technology & Data</option>
+
+<option value="HR">Human Resources</option>
+
+<option value="Risk">Risk & Compliance</option>
+
+</select>
+
+<button class="btn btn-primary" onclick="filterJobs()">
+Search Jobs
+</button>
+
+</div>
+
+
+<div class="jobs" id="jobList">
+
+
+<div class="job-card"
+data-title="Wealth Management Associate"
+data-department="Wealth">
+
+<h3>Wealth Management Associate</h3>
+
+<div class="job-meta">
+📍 Mumbai &nbsp; | &nbsp; 💼 0–2 Years
+</div>
+
+<p>
+Support relationship managers in delivering
+premium wealth solutions to clients.
+</p>
+
+<br>
+
+<button onclick="openJob('Wealth Management Associate')">
+View & Apply
+</button>
+
+</div>
+
+
+<div class="job-card"
+data-title="HR Business Partner"
+data-department="HR">
+
+<h3>HR Business Partner</h3>
+
+<div class="job-meta">
+📍 Bengaluru &nbsp; | &nbsp; 💼 2–5 Years
+</div>
+
+<p>
+Partner with business leaders and create
+people strategies that drive performance.
+</p>
+
+<br>
+
+<button onclick="openJob('HR Business Partner')">
+View & Apply
+</button>
+
+</div>
+
+
+<div class="job-card"
+data-title="Data Analyst"
+data-department="Technology">
+
+<h3>Data Analyst</h3>
+
+<div class="job-meta">
+📍 Mumbai &nbsp; | &nbsp; 💼 1–3 Years
+</div>
+
+<p>
+Turn financial and business data into
+meaningful insights.
+</p>
+
+<br>
+
+<button onclick="openJob('Data Analyst')">
+View & Apply
+</button>
+
+</div>
+
+
+<div class="job-card"
+data-title="Corporate Relationship Manager"
+data-department="Corporate">
+
+<h3>Corporate Relationship Manager</h3>
+
+<div class="job-meta">
+📍 Delhi &nbsp; | &nbsp; 💼 3–6 Years
+</div>
+
+<p>
+Build long-term financial relationships
+with corporate clients.
+</p>
+
+<br>
+
+<button onclick="openJob('Corporate Relationship Manager')">
+View & Apply
+</button>
+
+</div>
+
+
+<div class="job-card"
+data-title="Investment Analyst"
+data-department="Asset">
+
+<h3>Investment Analyst</h3>
+
+<div class="job-meta">
+📍 Mumbai &nbsp; | &nbsp; 💼 1–4 Years
+</div>
+
+<p>
+Research markets and support investment
+decision-making.
+</p>
+
+<br>
+
+<button onclick="openJob('Investment Analyst')">
+View & Apply
+</button>
+
+</div>
+
+
+<div class="job-card"
+data-title="Risk & Compliance Manager"
+data-department="Risk">
+
+<h3>Risk & Compliance Manager</h3>
+
+<div class="job-meta">
+📍 Pune &nbsp; | &nbsp; 💼 4–7 Years
+</div>
+
+<p>
+Support risk management and regulatory
+compliance processes.
+</p>
+
+<br>
+
+<button onclick="openJob('Risk & Compliance Manager')">
+View & Apply
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     CAREER AREAS
+====================================================== -->
+
+<section class="section career-areas">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>Explore Opportunities</span>
+
+<h2>Where Could You Grow?</h2>
+
+<p>
+APEX brings together professionals across
+multiple financial and corporate functions.
+</p>
+
+</div>
+
+<div class="area-grid">
+
+<div class="area">
+<h3>💰 Wealth Management</h3>
+<p>
+Help individuals and families plan,
+manage and preserve their wealth.
+</p>
+</div>
+
+<div class="area">
+<h3>📈 Asset Management</h3>
+<p>
+Research markets and support investment
+strategies.
+</p>
+</div>
+
+<div class="area">
+<h3>🏢 Corporate Banking</h3>
+<p>
+Build financial partnerships with businesses.
+</p>
+</div>
+
+<div class="area">
+<h3>💻 Technology & Data</h3>
+<p>
+Create technology and analytics solutions
+for modern banking.
+</p>
+</div>
+
+<div class="area">
+<h3>👥 Human Resources</h3>
+<p>
+Build the people, culture and talent
+behind APEX.
+</p>
+</div>
+
+<div class="area">
+<h3>🛡️ Risk & Compliance</h3>
+<p>
+Protect clients, employees and the
+institution.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     EMPLOYEE JOURNEY
+====================================================== -->
+
+<section class="section journey">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>Your APEX Journey</span>
+
+<h2>From Joining to Leading</h2>
+
+<p>
+We believe careers are journeys, not just job titles.
+</p>
+
+</div>
+
+<div class="journey-line">
+
+<div class="journey-step">
+
+<div class="journey-number">01</div>
+
+<h3>JOIN</h3>
+
+<p>
+Application, screening and interview.
+</p>
+
+</div>
+
+
+<div class="journey-step">
+
+<div class="journey-number">02</div>
+
+<h3>START</h3>
+
+<p>
+Onboarding, induction and support.
+</p>
+
+</div>
+
+
+<div class="journey-step">
+
+<div class="journey-number">03</div>
+
+<h3>LEARN</h3>
+
+<p>
+Training, mentoring and certifications.
+</p>
+
+</div>
+
+
+<div class="journey-step">
+
+<div class="journey-number">04</div>
+
+<h3>GROW</h3>
+
+<p>
+Performance and career development.
+</p>
+
+</div>
+
+
+<div class="journey-step">
+
+<div class="journey-number">05</div>
+
+<h3>LEAD</h3>
+
+<p>
+Leadership and strategic opportunities.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     WHY APEX
+====================================================== -->
+
+<section class="section why">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>Life at APEX</span>
+
+<h2>Why Build Your Career Here?</h2>
+
+</div>
+
+<div class="why-grid">
+
+<div class="why-card">
+<div>📚</div>
+<h3>Learn</h3>
+<p>Continuous learning and development.</p>
+</div>
+
+<div class="why-card">
+<div>📈</div>
+<h3>Grow</h3>
+<p>Career pathways and opportunities.</p>
+</div>
+
+<div class="why-card">
+<div>💡</div>
+<h3>Innovate</h3>
+<p>Work with modern financial solutions.</p>
+</div>
+
+<div class="why-card">
+<div>🤝</div>
+<h3>Belong</h3>
+<p>A collaborative workplace.</p>
+</div>
+
+<div class="why-card">
+<div>🏆</div>
+<h3>Lead</h3>
+<p>Opportunities to take ownership.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     EMPLOYEE STORIES
+====================================================== -->
+
+<section class="section stories">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>People Behind APEX</span>
+
+<h2>Meet Our People</h2>
+
+<p>
+Every APEX journey starts with a person.
+</p>
+
+</div>
+
+<div class="story-grid">
+
+<div class="story">
+
+<div class="story-image"></div>
+
+<div class="story-content">
+
+<h3>Ananya — Wealth Management</h3>
+
+<p>
+"I joined APEX as a Graduate Associate.
+The opportunity to learn directly from
+experienced professionals helped me grow."
+</p>
+
+</div>
+
+</div>
+
+
+<div class="story">
+
+<div class="story-image"></div>
+
+<div class="story-content">
+
+<h3>Rahul — Data Analytics</h3>
+
+<p>
+"What attracted me was the opportunity to
+combine technology, analytics and finance."
+</p>
+
+</div>
+
+</div>
+
+
+<div class="story">
+
+<div class="story-image"></div>
+
+<div class="story-content">
+
+<h3>Arjun — Corporate Banking</h3>
+
+<p>
+"APEX gave me the opportunity to work
+closely with businesses and understand
+their financial challenges."
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     CUSTOMER REVIEWS
+====================================================== -->
+
+<section class="section reviews" id="reviews">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>Client Experience</span>
+
+<h2>What Our Clients Say</h2>
+
+<p>
+Illustrative testimonials created for academic
+website demonstration.
+</p>
+
+</div>
+
+
+<div class="review-tabs">
+
+<button class="active" onclick="showReview('private',this)">
+Private Clients
+</button>
+
+<button onclick="showReview('corporate',this)">
+Corporate Clients
+</button>
+
+<button onclick="showReview('entrepreneur',this)">
+Entrepreneurs
+</button>
+
+</div>
+
+
+<div class="review-box">
+
+<div class="quote" id="reviewQuote">
+
+"APEX has helped us bring greater structure
+and clarity to our long-term wealth planning."
+
+</div>
+
+<div class="review-name" id="reviewName">
+— Private Banking Client
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     FINAL CTA
+====================================================== -->
+
+<section class="section cta">
+
+<div class="container">
+
+<h2>
+Your Future Could Be at the APEX.
+</h2>
+
+<p>
+Whether you're starting your career or ready
+for your next leadership opportunity,
+there's a place for ambition at APEX.
+</p>
+
+<a href="#careers" class="btn btn-primary">
+Explore Opportunities
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<div class="logo">
+APEX
+<span>BANK</span>
+</div>
+
+<br>
+
+<p>
+At the Peak of Financial Excellence.
+</p>
+
+<br>
+
+<p>
+A fictional banking institution created
+for academic website demonstration.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>Explore</h3>
+
+<a href="#about">About APEX</a>
+<a href="#performance">Performance</a>
+<a href="#reviews">Client Experience</a>
+
+</div>
+
+
+<div>
+
+<h3>Careers</h3>
+
+<a href="#careers">Search Jobs</a>
+<a href="#careers">Life at APEX</a>
+<a href="#careers">Employee Stories</a>
+
+</div>
+
+
+<div>
+
+<h3>Connect</h3>
+
+<a href="#">LinkedIn</a>
+<a href="#">Instagram</a>
+<a href="#">Contact Us</a>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 APEX Bank. Academic / fictional website project.
+All figures and testimonials are illustrative.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- ======================================================
+     JOB APPLICATION MODAL
+====================================================== -->
+
+<div class="modal" id="jobModal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">×</span>
+
+<h2 id="modalTitle">
+Apply to APEX
+</h2>
+
+<p style="color:#64748b;margin-bottom:20px;">
+Complete the form below to submit your application.
+</p>
+
+<form onsubmit="submitApplication(event)">
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<input
+type="tel"
+placeholder="Phone Number"
+required>
+
+<select required>
+
+<option value="">
+Select Experience
+</option>
+
+<option>0–2 Years</option>
+<option>2–5 Years</option>
+<option>5–8 Years</option>
+<option>8+ Years</option>
+
+</select>
+
+<input
+type="text"
+placeholder="LinkedIn Profile">
+
+<textarea
+placeholder="Tell us briefly about yourself">
+</textarea>
+
+<button class="form-btn">
+Submit Application
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+<!-- BACK TO TOP -->
+
+<button class="top-btn" id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+↑
+</button>
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script>
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+function toggleMenu() {
+
+    document.getElementById("navLinks")
+        .classList.toggle("show");
+
+}
+
+
+/* =========================================================
+   NAVIGATION HELPER
+========================================================= */
+
+function goTo(section) {
+
+    document.getElementById(section)
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+}
+
+
+/* =========================================================
+   JOB SEARCH
+========================================================= */
+
+function filterJobs() {
+
+    let search =
+        document.getElementById("jobSearch")
+        .value
+        .toLowerCase();
+
+    let department =
+        document.getElementById("departmentFilter")
+        .value;
+
+    let jobs =
+        document.querySelectorAll(".job-card");
+
+    jobs.forEach(function(job) {
+
+        let title =
+            job.dataset.title.toLowerCase();
+
+        let dept =
+            job.dataset.department;
+
+        let titleMatch =
+            title.includes(search);
+
+        let deptMatch =
+            department === "" ||
+            dept === department;
+
+        if(titleMatch && deptMatch) {
+
+            job.style.display = "block";
+
+        } else {
+
+            job.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+/* =========================================================
+   JOB APPLICATION MODAL
+========================================================= */
+
+function openJob(jobTitle) {
+
+    document.getElementById("jobModal")
+        .style.display = "flex";
+
+    document.getElementById("modalTitle")
+        .innerText =
+        "Apply for " + jobTitle;
+
+}
+
+
+function closeModal() {
+
+    document.getElementById("jobModal")
+        .style.display = "none";
+
+}
+
+
+window.onclick = function(event) {
+
+    let modal =
+        document.getElementById("jobModal");
+
+    if(event.target === modal) {
+
+        modal.style.display = "none";
+
+    }
+
+};
+
+
+/* =========================================================
+   APPLICATION SUBMISSION
+========================================================= */
+
+function submitApplication(event) {
+
+    event.preventDefault();
+
+    alert(
+        "Thank you for applying to APEX Bank!\n\n" +
+        "Your application has been submitted successfully.\n\n" +
+        "Application ID: APX" +
+        Math.floor(Math.random() * 90000 + 10000)
+    );
+
+    event.target.reset();
+
+    closeModal();
+
+}
+
+
+/* =========================================================
+   CUSTOMER REVIEWS
+========================================================= */
+
+function showReview(type, button) {
+
+    let quote =
+        document.getElementById("reviewQuote");
+
+    let name =
+        document.getElementById("reviewName");
+
+    document.querySelectorAll(".review-tabs button")
+        .forEach(function(btn) {
+
+            btn.classList.remove("active");
+
+        });
+
+    button.classList.add("active");
+
+
+    if(type === "private") {
+
+        quote.innerText =
+        '"APEX has helped us bring greater structure and clarity to our long-term wealth planning."';
+
+        name.innerText =
+        "— Private Banking Client";
+
+    }
+
+
+    if(type === "corporate") {
+
+        quote.innerText =
+        '"The APEX corporate banking team understands our business beyond just financing."';
+
+        name.innerText =
+        "— Corporate Client";
+
+    }
+
+
+    if(type === "entrepreneur") {
+
+        quote.innerText =
+        '"The combination of technology and personal advisory has made managing our finances much easier."';
+
+        name.innerText =
+        "— Entrepreneurial Client";
+
+    }
+
+}
+
+
+/* =========================================================
+   COUNTER ANIMATION
+========================================================= */
+
+let counters =
+    document.querySelectorAll(".counter");
+
+let counterStarted = false;
+
+
+function startCounters() {
+
+    if(counterStarted)
+        return;
+
+    counterStarted = true;
+
+    counters.forEach(function(counter) {
+
+        let target =
+            parseInt(counter.dataset.target);
+
+        let current = 0;
+
+        let increment =
+            Math.ceil(target / 80);
+
+        let timer =
+            setInterval(function() {
+
+                current += increment;
+
+                if(current >= target) {
+
+                    current = target;
+
+                    clearInterval(timer);
+
+                }
+
+                counter.innerText =
+                    current.toLocaleString();
+
+            }, 25);
+
+    });
+
+}
+
+
+/* =========================================================
+   SCROLL EVENTS
+========================================================= */
+
+window.addEventListener("scroll", function() {
+
+    let topBtn =
+        document.getElementById("topBtn");
+
+    if(window.scrollY > 500) {
+
+        topBtn.style.display = "block";
+
+    } else {
+
+        topBtn.style.display = "none";
+
+    }
+
+
+    let performance =
+        document.getElementById("performance");
+
+    let position =
+        performance.getBoundingClientRect().top;
+
+    if(position < window.innerHeight - 100) {
+
+        startCounters();
+
+    }
+
+});
+
+
+/* =========================================================
+   CLOSE MOBILE MENU AFTER CLICK
+========================================================= */
+
+document.querySelectorAll(".nav-links a")
+.forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        document.getElementById("navLinks")
+            .classList.remove("show");
+
+    });
+
+});
+
+
+</script>
+
+</body>
+</html>
